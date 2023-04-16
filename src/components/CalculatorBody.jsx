@@ -27,7 +27,7 @@ const CalculatorBody = () => {
 
     return (
         <>
-        <div className='bgBody'>
+        <div className='calcBody'>
           <div className='btnBody'>
             <button className="btnClear" onClick={clearState}>C</button>
             <button className="btnBack" onClick={backSpace}>←</button>
