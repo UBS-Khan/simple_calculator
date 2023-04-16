@@ -1,26 +1,26 @@
 import { useState } from "react";
 
 const CalculatorBody = () => {
-  const [input, setInput] = useState('');
+  const [key, setKey] = useState('');
 
   const setValue = (event) => {
-    setInput(input + event.target.value)
+    setKey(key + event.target.value)
   }
 
   const clearState = () => {
-    setInput('')
+    setKey('')
   }
 
   const backSpace = () => {
-    setInput(input.slice(0,-1))
+    setKey(key.slice(0,-1))
   }
 
   const mathOperations = () => {
     try{
-      const answer = eval(input);
-      setInput(answer.toString());
+      const answer = eval(key);
+      setKey(answer.toString());
     } catch (error){
-      setInput("Error!")
+      setKey("Error!")
     }
 
   }
@@ -51,7 +51,7 @@ const CalculatorBody = () => {
           </div>
         </div>
             <div className='screen'>
-              <input type="text" value={input} />
+              <input type="text" value={key} />
             </div>
         </>
     )
