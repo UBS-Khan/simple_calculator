@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bgBody{
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 150px;
+  background-color: #afafaf;
+  box-shadow: 0px 3px 6px rgba(255, 255, 255, .7);
+  border-radius: .2rem;
+  width: 16rem;
+  height: 20rem;
+  margin: auto;
+}
+
+input {
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+  left: 560px;
+  bottom: 153px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  width: 225px;
+  height: 20px;
+  padding: 10px;
+  font-size: x-large;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.btnBody{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: .5rem;
+  width: 15rem;
+  height: 15rem;
+  top: 72px;
+}
+
+button{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
+  border: none;
+  border-radius: 1vw;
+  font-size: larger;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
+
+button:hover{
+  background-color: #000000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:active{
+  transform: translateY(2px);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnClear{
+  background-color: #DD4333;
+}
+
+.btnClear:hover{
+  background-color: #000000;
+  color: #DD4333;
+}
+
+.btnEqls{
+  background-color: #FF964F;
+  grid-column: 3 / 5;
+}
+
+.btnEqls:hover{
+  background-color: black;
+  color: #FF964F;
 }
